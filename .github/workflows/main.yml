@@ -1,14 +1,13 @@
-name: sample workflow
+name: sample_workflow
 on: push
 jobs:
-  sample_job:
-    runs-on: ubuntu-latest
+  samplejob1:
+    runs-on: ubuntu_latest
     steps:
-    - name: print hello world
-      run: echo "hello world"
-    - name: print present directory
-      run: pwd
-    - name: change to ubuntu home dir
-      run: |
-        cd "/home/ubuntu"
-        pwd
+    - name: echo command on job1
+      run: echo "job 1"
+  samplejob2:
+    runs-on: ubuntu_latest
+    steps:
+      - name: echo command on job2
+        run: echo "job 2"
