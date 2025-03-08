@@ -9,4 +9,4 @@ jobs:
       - name: setup nodejs env
         uses: actions/setup-node@v4
       - name: run node js app
-        uses: node node.js
+        uses: node node.js    
