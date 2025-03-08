@@ -20,5 +20,5 @@ jobs:
       uses: actions/checkout@v4
     - name: move file to s3
       run: |
-        cp index.html s3://staticwebsitehosting0803/
-        cp error.html s3://staticwebsitehosting0803/
+        aws s3 cp index.html s3://staticwebsitehosting0803/
+        aws s3 cp error.html s3://staticwebsitehosting0803/
