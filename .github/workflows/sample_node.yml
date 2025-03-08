@@ -1,0 +1,12 @@
+name: node app workflow
+on: push
+jobs:
+  nodejsapp:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git checkout
+        uses: actions/checkout@v4
+      - name: setup nodejs env
+        uses: actions/setup-node@v4
+      - name: run node js app
+        uses: node node.js
