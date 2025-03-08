@@ -16,3 +16,9 @@ jobs:
         sudo ./aws/install --update
     - name: s3 ls
       run: aws s3 ls
+    - name: git checkout
+      uses: actions/checkout@v4
+    - name: move file to s3
+      run: |
+        cp index.html s3://staticwebsitehosting0803/
+        cp error.html s3://staticwebsitehosting0803/
