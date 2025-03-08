@@ -3,8 +3,8 @@ on: push
 jobs:
   awscli:
     env:
-      ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
-      SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
     runs-on: ubuntu-latest
     steps:
     - name: awscli configuration
