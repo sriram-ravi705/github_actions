@@ -2,12 +2,12 @@ name: sample_workflow
 on: push
 jobs:
   samplejob1:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
     - name: echo command on job1
       run: echo "job 1"
   samplejob2:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
       - name: echo command on job2
         run: echo "job 2"
