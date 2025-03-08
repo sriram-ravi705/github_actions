@@ -8,3 +8,7 @@ jobs:
       run: echo "hello world"
     - name: print present directory
       run: pwd
+    - name: change to ubuntu home dir
+      run: |
+        cd "/home/ubuntu"
+        pwd
